@@ -74,16 +74,19 @@ export default function Page() {
               </div>
               <br />
               <PlayRow
+                key={spotifyLink}
                 title="Spotify"
                 href={spotifyLink}
                 iconImage="/spotify_icon_500.png"
               />
               <PlayRow
+                key={appleMusicLink}
                 title="Apple Music"
                 href={appleMusicLink}
                 iconImage="/apple_music_icon_500.png"
               />
               <PlayRow
+                key={youtubeMusicLink}
                 title="YouTube Music"
                 href={youtubeMusicLink}
                 iconImage="/youtube_music_icon_500.png"
