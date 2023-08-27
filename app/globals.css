@@ -2,26 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.title {
+  @apply font-ranga text-2xl lg:text-4xl mb-5 underline decoration-4 decoration-blue-400;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.link {
+  @apply underline text-blue-800;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.indent {
+  @apply ml-[15px] lg:ml-[40px] mt-[5px];
+}
+.discograpy-panel {
+  @apply w-[330px] lg:w-[500px] bg-white p-5 lg:p-10;
 }
