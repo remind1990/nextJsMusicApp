@@ -42,7 +42,7 @@ export default function Page() {
           appleMusicLink,
           youtubeMusicLink,
         }) => (
-          <div k ey={id}>
+          <div key={id}>
             <div className="discograpy-panel text-left">
               <Link
                 href={`/record/${id}`}
